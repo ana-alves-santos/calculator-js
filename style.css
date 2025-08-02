@@ -1,0 +1,116 @@
+body {
+  background-color: #faf3f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.minha-calculadora {
+  background: #fff0f6;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(230, 150, 180, 0.4);
+  width: 320px;
+  padding: 25px;
+}
+
+.tela {
+  background-color: #ffd6e8;
+  border-radius: 15px;
+  height: 70px;
+  font-size: 36px;
+  color: #d6336c;
+  text-align: right;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  user-select: none;
+  box-shadow: inset 0 3px 5px rgba(255, 255, 255, 0.6);
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.botao {
+  background: #ffe3ec;
+  border: none;
+  border-radius: 15px;
+  font-size: 22px;
+  color: #9e2a56;
+  font-weight: 600;
+  padding: 15px 0;
+  cursor: pointer;
+  box-shadow: 0 6px 8px rgba(206, 91, 132, 0.4);
+  transition: background 0.3s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.botao:hover {
+  background: #ffadd2;
+  box-shadow: 0 8px 12px rgba(206, 91, 132, 0.6);
+}
+
+.operador {
+  background: #f6c1d6;
+  color: #7b1f3f;
+  font-weight: 700;
+  box-shadow: 0 6px 8px rgba(180, 70, 110, 0.5);
+}
+
+.operador:hover {
+  background: #e78eb5;
+  box-shadow: 0 8px 12px rgba(180, 70, 110, 0.7);
+}
+
+.limpar {
+  background: #fcc2d7;
+  color: #671a32;
+  font-weight: 700;
+  box-shadow: 0 6px 8px rgba(183, 48, 80, 0.5);
+}
+
+.limpar:hover {
+  background: #e794a6;
+  box-shadow: 0 8px 12px rgba(183, 48, 80, 0.7);
+}
+
+.igual {
+  grid-column: span 4;
+  background: #d6336c;
+  color: white;
+  font-weight: 700;
+  font-size: 26px;
+  box-shadow: 0 6px 12px rgba(214, 51, 108, 0.8);
+}
+
+.igual:hover {
+  background: #a1244f;
+  box-shadow: 0 8px 16px rgba(214, 51, 108, 1);
+}
+
+@media (max-width: 400px) {
+  .minha-calculadora {
+    width: 95vw; /* 95% da largura da tela */
+    padding: 15px;
+  }
+
+  .tela {
+    font-size: 28px;
+    height: 60px;
+    padding: 8px 15px;
+  }
+
+  .botao {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+
+  .igual {
+    font-size: 22px;
+  }
+}
