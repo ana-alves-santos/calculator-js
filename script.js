@@ -1,24 +1,22 @@
-let expressao = '';
+let expression = '';
 
-
-function adicionar(valor) {
-  expressao += valor;
-  document.getElementById('visor').innerText = expressao;
+function addValue(value) {
+  expression += value;
+  document.getElementById('screen').innerText = expression;
 }
 
-
-function limpar() {
-  expressao = '';
-  document.getElementById('visor').innerText = '0';
+function clearAll() {
+  expression = '';
+  document.getElementById('screen').innerText = '0';
 }
 
-function calcular() {
+function calculate() {
   try {
-    let resultado = eval(expressao); 
-    document.getElementById('visor').innerText = resultado;
-    expressao = resultado.toString(); 
+    let result = eval(expression); 
+    document.getElementById('screen').innerText = result;
+    expression = result.toString(); 
   } catch {
-    document.getElementById('visor').innerText = 'Erro';
-    expressao = '';
+    document.getElementById('screen').innerText = 'Error';
+    expression = '';
   }
 }
