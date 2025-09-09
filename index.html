@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Calculadora</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="my-calculator">
+    <div id="screen" class="screen">0</div>
+    <div class="buttons">
+      <button class="button clear" onclick="clearAll()">C</button>
+      <button class="button operator" onclick="addValue('/')">/</button>
+      <button class="button operator" onclick="addValue('*')">*</button>
+      <button class="button operator" onclick="addValue('-')">-</button>
 
-  <div class="minha-calculadora">
-    <div class="tela" id="visor">0</div>
-    <div class="botoes">
-      <button class="botao" onclick="adicionar('7')">7</button>
-      <button class="botao" onclick="adicionar('8')">8</button>
-      <button class="botao" onclick="adicionar('9')">9</button>
-      <button class="botao operador" onclick="adicionar('+')">+</button>
+      <button class="button" onclick="addValue('7')">7</button>
+      <button class="button" onclick="addValue('8')">8</button>
+      <button class="button" onclick="addValue('9')">9</button>
+      <button class="button operator" onclick="addValue('+')">+</button>
 
-      <button class="botao" onclick="adicionar('4')">4</button>
-      <button class="botao" onclick="adicionar('5')">5</button>
-      <button class="botao" onclick="adicionar('6')">6</button>
-      <button class="botao operador" onclick="adicionar('-')">-</button>
+      <button class="button" onclick="addValue('4')">4</button>
+      <button class="button" onclick="addValue('5')">5</button>
+      <button class="button" onclick="addValue('6')">6</button>
+      <button class="button" onclick="addValue('.')">.</button>
 
-      <button class="botao" onclick="adicionar('1')">1</button>
-      <button class="botao" onclick="adicionar('2')">2</button>
-      <button class="botao" onclick="adicionar('3')">3</button>
-      <button class="botao operador" onclick="adicionar('*')">*</button>
+      <button class="button" onclick="addValue('1')">1</button>
+      <button class="button" onclick="addValue('2')">2</button>
+      <button class="button" onclick="addValue('3')">3</button>
+      <button class="button" onclick="addValue('0')">0</button>
 
-      <button class="botao" onclick="adicionar('0')">0</button>
-      <button class="botao" onclick="adicionar('.')">.</button>
-      <button class="botao limpar" onclick="limpar()">C</button>
-      <button class="botao operador" onclick="adicionar('/')">/</button>
-
-      <button class="botao igual" onclick="calcular()">=</button>
+      <button class="button equal" onclick="calculate()">=</button>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
-
-
