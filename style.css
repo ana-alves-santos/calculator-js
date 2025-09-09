@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 
-.minha-calculadora {
+.my-calculator {
   background: #fff0f6;
   border-radius: 20px;
   box-shadow: 0 8px 15px rgba(230, 150, 180, 0.4);
@@ -17,7 +17,7 @@ body {
   padding: 25px;
 }
 
-.tela {
+.screen {
   background-color: #ffd6e8;
   border-radius: 15px;
   height: 70px;
@@ -30,13 +30,13 @@ body {
   box-shadow: inset 0 3px 5px rgba(255, 255, 255, 0.6);
 }
 
-.botoes {
+.buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 }
 
-.botao {
+.button {
   background: #ffe3ec;
   border: none;
   border-radius: 15px;
@@ -50,36 +50,36 @@ body {
   user-select: none;
 }
 
-.botao:hover {
+.button:hover {
   background: #ffadd2;
   box-shadow: 0 8px 12px rgba(206, 91, 132, 0.6);
 }
 
-.operador {
+.operator {
   background: #f6c1d6;
   color: #7b1f3f;
   font-weight: 700;
   box-shadow: 0 6px 8px rgba(180, 70, 110, 0.5);
 }
 
-.operador:hover {
+.operator:hover {
   background: #e78eb5;
   box-shadow: 0 8px 12px rgba(180, 70, 110, 0.7);
 }
 
-.limpar {
+.clear {
   background: #fcc2d7;
   color: #671a32;
   font-weight: 700;
   box-shadow: 0 6px 8px rgba(183, 48, 80, 0.5);
 }
 
-.limpar:hover {
+.clear:hover {
   background: #e794a6;
   box-shadow: 0 8px 12px rgba(183, 48, 80, 0.7);
 }
 
-.igual {
+.equal {
   grid-column: span 4;
   background: #d6336c;
   color: white;
@@ -88,29 +88,29 @@ body {
   box-shadow: 0 6px 12px rgba(214, 51, 108, 0.8);
 }
 
-.igual:hover {
+.equal:hover {
   background: #a1244f;
   box-shadow: 0 8px 16px rgba(214, 51, 108, 1);
 }
 
 @media (max-width: 400px) {
-  .minha-calculadora {
-    width: 95vw; /* 95% da largura da tela */
+  .my-calculator {
+    width: 95vw; 
     padding: 15px;
   }
 
-  .tela {
+  .screen {
     font-size: 28px;
     height: 60px;
     padding: 8px 15px;
   }
 
-  .botao {
+  .button {
     font-size: 18px;
     padding: 12px 0;
   }
 
-  .igual {
+  .equal {
     font-size: 22px;
   }
 }
